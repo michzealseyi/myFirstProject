@@ -1,5 +1,5 @@
 //STATE MANAGEMENT; UNDER WHICH WE FIND THE METHOD "CONTEXT"
-import React, { useState, createContext } from "react";
+import { useState, createContext } from "react";
 export const PriceContext = createContext("");
 export const PriceProvider = (props: any) => {
   const [prices, setPrice] = useState([
@@ -27,10 +27,8 @@ export const PriceProvider = (props: any) => {
   ]);
 
   return (
-    <PriceContext.Provider value={{ prices }}>
+    <PriceContext.Provider value={[prices, setPrice]}>
       {props.children}
     </PriceContext.Provider>
   );
 };
-
-export default PriceContext;

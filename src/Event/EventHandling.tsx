@@ -73,7 +73,7 @@ function PriceList() {
 export default PriceList;*/
 
 import React, { useState, useContext } from "react";
-import Price from "./Price";
+import Price from "../Practice/Price";
 import { PriceContext } from "./PriceContext";
 const PriceList = () => {
   const [prices, setPrice] = useContext(PriceContext);

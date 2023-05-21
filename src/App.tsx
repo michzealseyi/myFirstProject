@@ -10,10 +10,17 @@ function App() {
 }
 export default App;*/
 
-//to make use of <span>, or any other html component, the argument for 'childen' as to be ReactNode
+/*import React from "react";
+import Cola from "./StateMangement/UseState";
+export default function App() {
+  return (
+    <div>
+      <Cola />
+    </div>
+  );
+}*/
 
-//import ExpenseEntryItem from "./components/SimpCompUsingProps";
-import ExpenseEntryItem1 from "./components/NestedComp";
+/*import ExpenseEntryItem1 from "./components/NestedComp";
 import React, { Component } from "react";
 import Click from "./components/Click";
 import Counter from "./components/Counter";
@@ -32,6 +39,15 @@ export class App extends Component {
       </PriceProvider>
     );
   }
-}
+}*/
 
+import React from "react";
+import MainApp from "./StateMangement/BeginnerCreateContext";
+function App() {
+  return (
+    <div>
+      <MainApp />
+    </div>
+  );
+}
 export default App;
